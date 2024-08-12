@@ -1,6 +1,6 @@
 output "cluster_id" {
   description = "O ID do cluster EKS"
-  value       = module.eks.cluster_id
+  value       = aws_eks_cluster.this.cluster_id
 }
 
 #output "kubeconfig" {
